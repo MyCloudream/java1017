@@ -1,0 +1,12 @@
+package cn.ucai.day26.gene;
+
+public interface GenericInterface<E> {
+	public abstract void method(E e1,E e2);
+}
+
+class Person implements GenericInterface<Person>{
+	@Override
+	public void method(Person e1, Person e2) {
+		
+	}
+}

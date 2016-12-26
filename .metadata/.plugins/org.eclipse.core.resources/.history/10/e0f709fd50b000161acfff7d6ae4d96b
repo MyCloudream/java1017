@@ -1,0 +1,10 @@
+package cn.ucai.day27.thread;
+
+/**
+ * 线程的创建方式
+ * 1、继承Thread类
+ * 2、实现Runnable接口
+ */
+public class TestThread {
+
+}

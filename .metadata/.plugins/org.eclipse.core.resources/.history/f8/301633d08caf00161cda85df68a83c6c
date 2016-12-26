@@ -1,0 +1,14 @@
+package cn.ucai.day26;
+
+public class MyStringBuilder {
+	private String result = "";
+	public String append(String msg){
+		result += msg;
+		return result;
+	}
+	
+	@Override
+	public String toString(){
+		return result;
+	}
+}

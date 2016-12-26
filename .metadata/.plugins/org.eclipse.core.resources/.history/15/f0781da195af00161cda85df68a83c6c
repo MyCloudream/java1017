@@ -1,0 +1,25 @@
+package cn.ucai.day26;
+
+import java.util.Arrays;
+import java.util.List;
+
+/**
+ * 一维数组和集合的相互转换
+ */
+public class TestArray {
+	public static void main(String[] args) {
+		String[] strArr = {"one","two","three","four","five"};
+		// 把strArr转为List集合
+		List<String> list = Arrays.asList(strArr);
+
+		// 将list转为指定类型的数组
+		String[] sArr1 = {};
+		String[] sArr2 = {"abc"};
+		String[] sArr3 = new String[0];
+		String[] sArr3 = new String[10];
+		String[] strArr2 = list.toArray(new String[]{});
+		for(String s : strArr2){
+			System.out.println(s);
+		}
+	}
+}

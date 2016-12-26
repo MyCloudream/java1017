@@ -1,0 +1,9 @@
+package cn.ucai.test;
+
+import cn.ucai.util.IOUtil;
+
+public class TestIOUtil {
+	public static void main(String[] args) {
+		IOUtil.getText(file);
+	}
+}

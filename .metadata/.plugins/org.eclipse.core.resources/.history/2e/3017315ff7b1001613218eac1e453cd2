@@ -1,0 +1,22 @@
+package cn.ucai.day29;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Set;
+
+public class TestLinkedHashMap {
+	public static void main(String[] args) {
+		HashMap<String,String> map = new HashMap<String,String>();
+		map.put("username", "zhangsan");
+		map.put("password", "123456");
+		map.put("email", "zhangsan@ucai.cn");
+		map.put("qq","123456");
+		
+		Set<String> set = map.keySet();
+		Iterator<String> it = set.iterator();
+		while(it.hasNext()){
+			String key = it.next();
+			String value = map.get(key);
+		}
+	}
+}

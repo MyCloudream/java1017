@@ -1,0 +1,22 @@
+package cn.ucai.day30.linkedlist;
+
+public class TestLinkedList {
+	public static void main(String[] args) {
+		Node<String> node1 = new Node<>();
+		node1.value = "a";
+		
+		Node<String> node2 = new Node<>();
+		node2.value = "b";
+		
+		Node<String> node3 = new Node<>();
+		node3.value = "c";
+		
+		Node<String> node4 = new Node<>();
+		node4.value = "d";
+		
+		Node<String> node5 = new Node<>();
+		node5.value = "e";
+		
+		
+	}
+}

@@ -1,0 +1,9 @@
+package cn.ucai.day27.thread;
+
+public class TestWait {
+	public synchronized void m1(){
+		
+	}
+	
+	
+}

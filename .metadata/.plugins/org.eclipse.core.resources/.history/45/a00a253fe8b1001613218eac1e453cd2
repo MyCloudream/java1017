@@ -1,0 +1,12 @@
+package cn.ucai.day29;
+
+public class Person {
+	public static void main(String[] args) {
+		Class c1 = Single.class;
+		Class c2 = Single.class;
+		
+//		Person s1 = new Person();
+//		Person s2 = new Person();
+//		System.out.println(s1==s2);
+	}
+}

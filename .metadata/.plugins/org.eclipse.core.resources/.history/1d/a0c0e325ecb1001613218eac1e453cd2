@@ -1,0 +1,29 @@
+package cn.ucai.day29;
+
+public class TestThread {
+	static int money = 1000;
+	public static void main(String[] args) {
+		MyThread mt = new MyThread();
+		Thread th1 = new Thread(mt);
+		Thread th2 = new Thread(mt);
+		Thread th3 = new Thread(mt);
+	}
+	
+	private static class MyThread implements Runnable{
+		@Override
+		public void run() {
+			// 1、是各线程无关的。
+			for(int i=0;i<10;i++){
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+				System.out.println(Thread.currentThread().getName());
+			}
+			// 2、money
+			if(mo)
+			// 3、无关
+		}
+	}
+}

@@ -1,0 +1,22 @@
+package cn.ucai.day16.io;
+
+import java.io.File;
+
+public class TestFile5 {
+	public static void main(String[] args) {
+		/*File file = new File("E:/abc/a.txt");
+		if(file.exists()){
+			file.delete();
+		}else{
+			try {
+				file.createNewFile();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}*/
+		
+		File fileDir = new File("E:/abc/");
+		fileDir.delete();
+		
+	}
+}

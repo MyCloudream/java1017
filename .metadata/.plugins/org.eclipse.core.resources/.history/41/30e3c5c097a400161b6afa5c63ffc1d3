@@ -1,0 +1,11 @@
+package cn.ucai.day16.io;
+
+/**
+ * File£º
+ * 
+ */
+public class TestFile {
+	public static void main(String[] args) {
+		File file = new File();
+	}
+}

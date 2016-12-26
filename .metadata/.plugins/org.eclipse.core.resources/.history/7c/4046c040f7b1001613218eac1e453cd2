@@ -1,0 +1,9 @@
+package cn.ucai.day29;
+
+import java.util.HashMap;
+
+public class TestLinkedHashMap {
+	public static void main(String[] args) {
+		HashMap<String,String> map = new HashMap<String,String>();
+	}
+}

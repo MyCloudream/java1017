@@ -1,0 +1,17 @@
+package cn.ucai.day28;
+
+import java.io.DataOutputStream;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+
+public class TestDataOutputStream {
+	public static void main(String[] args) {
+		try {
+			DataOutputStream dos = new DataOutputStream(new FileOutputStream(new File("E:/abc/a.txt")));
+			
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+}

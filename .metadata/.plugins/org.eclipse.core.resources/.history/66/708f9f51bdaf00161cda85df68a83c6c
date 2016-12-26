@@ -1,0 +1,8 @@
+package cn.ucai.day26.reflex;
+
+public class TestPerson {
+	public static void main(String[] args) {
+		Person p = new Person();
+		Class c = Person.class;
+	}
+}

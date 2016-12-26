@@ -1,0 +1,30 @@
+package cn.ucai.day27.thread;
+
+public class TestWait {
+	public synchronized void m1(){
+		try {
+			wait();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public synchronized void m2(){
+		
+	}
+	public static void main(String[] args) {
+		
+	}
+}
+
+class MyThread1 implements Runnable{
+	private TestWait tw;
+	public MyThread1(TestWait tw) {
+		this.tw = tw;
+	}
+	@Override
+	public void run() {
+		tw.m1();
+	}
+}

@@ -1,0 +1,41 @@
+package cn.ucai.day30.linkedlist;
+
+/**
+ * 单向链表
+ */
+public class Node<E> {
+	E value;// 值
+	Node<E> next;
+	
+	public Node() {
+		super();
+	}
+
+	public Node(E e, Node<E> next) {
+		super();
+		this.e = e;
+		this.next = next;
+	}
+
+	public E getE() {
+		return e;
+	}
+
+	public void setE(E e) {
+		this.e = e;
+	}
+
+	public Node<E> getNext() {
+		return next;
+	}
+
+	public void setNext(Node<E> next) {
+		this.next = next;
+	}
+
+	@Override
+	public String toString() {
+		return "Node [e=" + e + ", next=" + next + "]";
+	}
+	
+}

@@ -1,0 +1,8 @@
+package cn.ucai.day29.datastructure;
+
+/**
+ * 队列：先进先出的一种数据结构，并且数据都是从队尾加入。
+ */
+public class TestQueue {
+
+}

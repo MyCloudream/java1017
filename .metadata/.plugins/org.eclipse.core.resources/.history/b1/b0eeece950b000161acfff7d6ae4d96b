@@ -1,0 +1,9 @@
+package cn.ucai.day27.thread;
+
+/**
+ * 线程的创建方式
+ * 1、
+ */
+public class TestThread {
+
+}

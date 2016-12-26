@@ -1,0 +1,13 @@
+package cn.ucai.day26;
+
+import java.util.Arrays;
+
+public class TestString {
+	public static void main(String[] args) {
+		String str = "ÖÐ¹ú";
+		byte[] byArr = str.getBytes();
+
+		String s = new String(byArr);
+		syso
+	}
+}

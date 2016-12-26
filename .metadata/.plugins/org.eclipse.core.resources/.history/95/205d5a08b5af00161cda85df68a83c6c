@@ -1,0 +1,15 @@
+package cn.ucai.day26.gene;
+
+import java.util.Set;
+import java.util.TreeSet;
+
+public class TestTreeSet {
+	public static void main(String[] args) {
+		Set<Person> set = new TreeSet<Person>();
+		Person p1 = new Person("zhangsan",20);
+		Person p1 = new Person("lisi",21);
+		Person p1 = new Person("wangwu",22);
+		Person p1 = new Person("zhaoliu",20);
+		
+	}
+}

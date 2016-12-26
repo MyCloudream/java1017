@@ -1,0 +1,13 @@
+package cn.ucai.util;
+
+public class IOUtil {
+	/**
+	 * 从指定文本中读取json格式的内容
+	 * 模拟从服务端获取json格式数据的操作
+	 * @param file
+	 * @return
+	 */
+	public String getText(File file){
+		
+	}
+}

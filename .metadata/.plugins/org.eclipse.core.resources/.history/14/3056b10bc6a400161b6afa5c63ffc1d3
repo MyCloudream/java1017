@@ -1,0 +1,13 @@
+package cn.ucai.day16.io;
+
+import java.io.FileInputStream;
+
+/**
+ * 如果需要将数据存储在本地文件中、或者想从本地文件中读取一些数据到程序中，就需要IO流方面的知识。
+ * 文件输入流：将文件中的数据，拿到程序中。
+ */
+public class TestIO {
+	public static void main(String[] args) {
+		FileInputStream fis = new FileInputStream(file);
+	}
+}

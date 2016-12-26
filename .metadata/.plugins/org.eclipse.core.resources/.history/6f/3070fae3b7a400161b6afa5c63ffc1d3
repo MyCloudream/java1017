@@ -1,0 +1,13 @@
+package cn.ucai.day16.io;
+
+import java.io.File;
+
+public class TestFile7 {
+	public static void main(String[] args) {
+		File fileDir = new File("E:/abc/");
+		File[] fileArr = fileDir.listFiles();
+		for(int i=0;i<fileArr.length;i++){
+			fileArr[i].renameTo(new File("E:/abc/",""));
+		}
+	}
+}

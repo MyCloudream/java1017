@@ -1,0 +1,11 @@
+package cn.ucai.day28;
+
+/**
+ * 1、字节流
+ * 2、跟文件打交道，用文件输入输出流
+ */
+public class TestFileCopy {
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,22 @@
+package cn.ucai.day27.thread;
+
+public class TestThread4 {
+	public static void main(String[] args) {
+		MyThread mt = new MyThread();
+		mt.start();
+		try {
+			mt.join();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+		System.out.println("Hello ");
+	}
+	
+	private static class MyThread extends Thread{
+		@Override
+		public void run() {
+			System.out.println("World");
+		}
+	}
+}

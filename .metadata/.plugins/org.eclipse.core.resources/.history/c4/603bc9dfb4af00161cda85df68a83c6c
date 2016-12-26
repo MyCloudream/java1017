@@ -1,0 +1,6 @@
+package cn.ucai.day26.gene;
+
+public class Person {
+	private String name;
+	private int age;
+}

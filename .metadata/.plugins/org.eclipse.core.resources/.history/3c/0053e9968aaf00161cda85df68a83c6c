@@ -1,0 +1,7 @@
+package cn.ucai.day26;
+
+public class TestMyUrl {
+	public static void main(String[] args) {
+		
+	}
+}

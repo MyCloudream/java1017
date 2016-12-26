@@ -1,0 +1,13 @@
+package cn.ucai.day29.datastructure;
+
+import java.util.ArrayList;
+
+public class MyStack<E> {
+	private ArrayList<E> list ;
+	
+	public MyStack(){
+		list = new ArrayList<E>();
+	}
+	
+	
+}

@@ -1,0 +1,7 @@
+package cn.ucai.day30.linkedlist;
+
+public class TestLinkedList {
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,13 @@
+package cn.ucai.day26.gene;
+
+interface Inter<E,K,W>{
+	public abstract void m(E e1,K k1);
+}
+
+public class Generic implements Inter<String,Integer>{
+	@Override
+	public void m(String e1, Integer k1) {
+		
+	}
+
+}

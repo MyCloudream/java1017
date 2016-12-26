@@ -1,0 +1,20 @@
+package cn.ucai.day29;
+
+import java.util.Arrays;
+
+public class TestString {
+	public static void main(String[] args) {
+		String s = "abcabcabcdabc";
+		System.out.println(Arrays.toString(s.split("")));
+		/*System.out.println(s.indexOf("b"));
+		System.out.println(s.lastIndexOf("b"));*/
+		
+		// 所有b的位置
+		int n = s.indexOf("b");
+		System.out.println(n);
+		while(n!=-1){
+			n = s.indexOf("b", (n+1));
+			System.out.println(n);
+		}
+	}
+}

@@ -1,0 +1,8 @@
+package cn.ucai.day26;
+
+/**
+ * ＵＲＬ：统一资源定位符，其实就是一个网址。
+ */
+public class MyUrl {
+
+}

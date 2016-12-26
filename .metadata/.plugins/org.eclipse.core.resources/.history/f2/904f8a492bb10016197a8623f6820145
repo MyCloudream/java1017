@@ -1,0 +1,10 @@
+package cn.ucai.day28;
+
+import java.io.File;
+
+public class TestUnZip {
+	public static void main(String[] args) {
+		File fileZip = new File("E:/copy/Test.zip");
+		File file = new File("E:/abc/Test.java");
+	}
+}

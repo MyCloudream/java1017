@@ -1,0 +1,10 @@
+package cn.ucai.day28.sort;
+
+/**
+ * —°‘Ò≈≈–Ú
+ */
+public class TestSelect {
+	public static void main(String[] args) {
+		int[] niArr = {};
+	}
+}

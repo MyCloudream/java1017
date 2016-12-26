@@ -1,0 +1,9 @@
+package cn.ucai.day30.linkedlist;
+
+/**
+ * 单向链表
+ */
+public class Node<E> {
+	E e;// 值
+	Node<E> next;
+}

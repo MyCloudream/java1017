@@ -1,0 +1,20 @@
+package cn.ucai.day26;
+
+import java.io.UnsupportedEncodingException;
+
+public class TestString {
+	public static void main(String[] args) {
+		/*String str = "ÖÐ¹ú";
+		try {
+			String str2 = new String(str.getBytes("ISO-8859-1"),"utf-8");
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}*/
+
+//		String s = new String(byArr);
+//		System.out.println(s);
+		
+		
+		
+	}
+}

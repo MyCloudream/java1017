@@ -1,0 +1,17 @@
+package cn.ucai.day26;
+
+import java.util.List;
+
+/**
+ * ＵＲＬ：统一资源定位符，其实就是一个网址。
+ * http://localhost:8080/SuperWeChatServer/Server?request=server_status
+ * http://localhost:8080/SuperWeChatServer/Server?request=register&m_user_name=&m_user_nick=&m_user_password=
+ */
+public class MyUrl {
+	private String ip;
+	private String port;
+	private String projectName;
+	private String action;
+	private List<String> paramKey;
+	private List<String> paramValue;
+}

@@ -1,0 +1,15 @@
+package cn.ucai.day16.io;
+
+import java.io.File;
+
+public class TestFile8 {
+	public static void main(String[] args) {
+		File fileDir = new File("E:/abc/");
+		File[] fileArr = fileDir.listFiles();
+		for (int i = 0; i < fileArr.length; i++) {
+			if(fileArr[i].getName().endsWith(".java")){
+				
+			}
+		}
+	}
+}

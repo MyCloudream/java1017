@@ -1,0 +1,15 @@
+package cn.ucai.day28;
+
+import java.io.File;
+import java.io.FileInputStream;
+
+/**
+ * 1、字节流
+ * 2、跟文件打交道，用文件输入输出流
+ */
+public class TestFileCopy {
+	public static void main(String[] args) {
+		File fileSrc = new File("E:/abc/TestInteger.java");
+		FileInputStream fis = new FileInputStream(fileSrc);
+	}
+}

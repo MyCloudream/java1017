@@ -1,0 +1,32 @@
+package cn.ucai.day27.thread;
+
+public class TestWait {
+	public synchronized void m1(){
+		try {
+			wait();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		while(true){
+			System.out.println("Hello");
+		}
+	}
+	
+	public synchronized void m2(){
+		
+	}
+	public static void main(String[] args) {
+		
+	}
+}
+
+class MyThread1 implements Runnable{
+	private TestWait tw;
+	public MyThread1(TestWait tw) {
+		this.tw = tw;
+	}
+	@Override
+	public void run() {
+		tw.m1();
+	}
+}

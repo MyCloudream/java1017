@@ -1,0 +1,29 @@
+package cn.ucai.day30.linkedlist;
+
+public class TestLinkedList {
+	public static void main(String[] args) {
+		Node<String> node = new Node<>();
+		node.value = "a";
+		
+		node.next = new Node<>();
+		node.next.value = "b";
+//		node1.next = node2;
+		// 第二个元素（的引用）给node，这样的话，node指向第二个元素。
+		node = node.next;
+		
+		// 这样太长了
+//		node.next.next = new Node<>();
+		node3.value = "c";
+		node2.next = node3;
+		
+		Node<String> node4 = new Node<>();
+		node4.value = "d";
+		node3.next = node4;
+		
+		Node<String> node5 = new Node<>();
+		node5.value = "e";
+		node4.next = node5;
+		
+		
+	}
+}

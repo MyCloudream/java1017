@@ -1,0 +1,57 @@
+package cn.ucai.day27.thread;
+
+import java.util.Scanner;
+
+/**
+ * 1、线程的其他基本概念
+ * 2、线程的生命周期
+ * 3、线程的同步
+ * 
+ * 守护线程 Deamon Thread：
+ * 守护线程是一种特殊的线程，一般用于服务其他线程，如果一般线程结束，则守护线程自动跟着结束。
+ * 
+ *  GC：垃圾回收线程
+ *  
+ *  prio：线程的优先级：
+ *  优先级从1-10，10表示最高
+ *  默认情况下，如果不指定优先级，则为5.
+ *  
+ *  
+ *  饭店：操作系统
+ *  桌子：进程，一个桌子上可能有多个吃饭的人，也可能有一个吃饭的人
+ *  吃饭的人：线程
+ *  大厨：CPU，一个大厨就是单核CPU，多个大厨就是多核CPU
+ *  做的菜：就是时间片
+ *  如何上菜：CPU的调度
+ *  一个桌子和另外一个桌子的交流：进程间的通讯
+ *  多个人都要上厕所：并发
+ *  厕所只有一个，一次只能一个人使用：同步
+ *  一个人在使用厕所，其他人也进来了：线程不安全
+ *  线程不安全：排他锁
+ *  
+ *  厕所旁边有个麻将桌：等待池
+ *  其他人喊打麻将的人上厕所：等待和通知机制
+ */
+public class TestDeamonThread {
+	public static void main(String[] args) {
+		MyThread mt = new MyThread();
+		// 设在mt为守护线程
+		mt.setDaemon(true);
+		mt.start();
+		
+		Scanner scan = new Scanner(System.in);
+		// 阻塞操作
+		String str = scan.next();
+		System.out.println("str:"+str);
+		scan.close();
+	}
+	
+	private static class MyThread extends Thread{
+		@Override
+		public void run() {
+			while(true){
+				System.out.println(Thread.currentThread().getName());
+			}
+		}
+	}
+}

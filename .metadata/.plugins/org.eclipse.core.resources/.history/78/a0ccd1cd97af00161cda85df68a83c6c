@@ -1,0 +1,23 @@
+package cn.ucai.day26;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * 初始化方式：
+ * 1、默认初始化
+ * 2、静态初始化
+ * 3、动态初始化
+ */
+public class TestArray2 {
+	public static void main(String[] args) {
+		String[][] strArr = {
+				{"one","two","three","four","five"},
+				{"one","two","three","four","five"},
+				{"one","two","three","four","five"}
+		};
+		
+		List<List<String>> list = new ArrayList<List<String>>();
+		
+	}
+}

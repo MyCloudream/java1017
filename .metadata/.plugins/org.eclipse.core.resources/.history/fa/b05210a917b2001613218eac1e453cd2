@@ -1,0 +1,36 @@
+package cn.ucai.day29.datastructure;
+
+import java.util.ArrayList;
+
+public class MyStack<E> {
+	private ArrayList<E> list ;
+	
+	public MyStack(){
+		list = new ArrayList<E>();
+	}
+	
+	/**
+	 * 压栈 入栈
+	 */
+	public void push(E e){
+		list.add(e);
+	}
+	
+	/**
+	 * 出栈：
+	 * 1、得到栈顶的元素
+	 * 2、删除栈顶的元素
+	 */
+	public E pop(){
+		E e = list.get(list.size()-1);
+		list.remove(e);
+		return e;
+	}
+	
+	/**
+	 * 得到栈顶元素，但是不出栈
+	 */
+	public E peek(){
+		
+	}
+}

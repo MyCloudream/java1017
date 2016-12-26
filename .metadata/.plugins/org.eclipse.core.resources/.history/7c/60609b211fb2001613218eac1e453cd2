@@ -1,0 +1,27 @@
+package cn.ucai.day29.datastructure;
+
+import java.util.ArrayList;
+
+/**
+ * 使用自定义的栈MyStack完成队列的功能。
+ * 
+ */
+public class MyQueue2<E> {
+	private ArrayList<E> list;
+	
+	public void addLast(E e){
+		list.add(e);
+	}
+	
+	public E removeFirst(){
+		
+	}
+	
+	public E getFirst(){
+		
+	}
+	
+	public boolean isEmpty(){
+		return false;
+	}
+}

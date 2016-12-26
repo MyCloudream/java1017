@@ -1,0 +1,13 @@
+package cn.ucai.day29;
+
+public class TestThread {
+	int money = 1000;
+	private class MyThread implements Runnable{
+		@Override
+		public void run() {
+			// 1、是各线程无关的。
+			// 2、money
+			// 3、无关
+		}
+	}
+}

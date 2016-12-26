@@ -1,0 +1,22 @@
+package cn.ucai.day29.datastructure;
+
+import java.util.Stack;
+
+/**
+ * 栈
+ * 队列
+ * 链表
+ * 树
+ * 
+ * JAVA里面：
+ * 1、堆 2、栈   内存区域
+ * 
+ * 栈（Stack）（丝带可）  堆栈：一种数据结构
+ * 栈：先进后出 后进先出
+ */
+public class TestStack {
+	public static void main(String[] args) {
+		Stack<String> stack = new Stack<String>();
+		
+	}
+}

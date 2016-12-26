@@ -1,0 +1,12 @@
+package cn.ucai.day16.io;
+
+import java.io.FileOutputStream;
+
+/**
+ * 
+ */
+public class TestFOS {
+	public static void main(String[] args) {
+		FileOutputStream fos = new FileOutputStream(file);
+	}
+}

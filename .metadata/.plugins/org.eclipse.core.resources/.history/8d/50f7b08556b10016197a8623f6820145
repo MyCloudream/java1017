@@ -1,0 +1,16 @@
+package cn.ucai.day28.sort;
+
+import java.util.Arrays;
+
+public class TestInsert {
+	public static void main(String[] args) {
+		int[] niArr = {3, 2, 38, 5, 47, 15, 36, 26, 27, 2, 46, 4, 19, 50, 48};
+		// µÚÒ»´Î
+		int temp = niArr[1];
+		if(niArr[1]<niArr[0]){
+			niArr[1] = niArr[0];
+			niArr[0] = temp;
+		}
+		System.out.println(Arrays.toString(niArr));
+	}
+}

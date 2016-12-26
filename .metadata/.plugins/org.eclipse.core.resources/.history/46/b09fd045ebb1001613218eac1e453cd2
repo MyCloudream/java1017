@@ -1,0 +1,13 @@
+package cn.ucai.day29;
+
+public class Person {
+	public static void main(String[] args) {
+		Class c1 = Person.class;
+		Class c2 = Person.class;
+		System.out.println(c1==c2);
+//		Person s1 = new Person();
+//		Person s2 = new Person();
+//		System.out.println(s1==s2);
+		Vector
+	}
+}

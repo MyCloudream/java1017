@@ -1,0 +1,17 @@
+package cn.ucai.day27.thread;
+
+public class Test {
+	public static void main(String[] args) {
+		
+	}
+	
+	public static void m1(){
+		
+	};
+	public static void m2(){
+		
+	};
+	public static void m3(){
+		
+	};
+}

@@ -1,0 +1,16 @@
+package cn.ucai.day30.linkedlist;
+
+public class TestPerson {
+	public static void main(String[] args) {
+		Person p1 = new Person("张三",60);
+		
+		Person p2 = new Person("张小三",35);
+
+		Person p3 = new Person("张小小三",5);
+		
+		p1.setChild(p2);
+		
+		// 输出张三的儿子的儿子的姓名
+		System.out.println(p1.getChild().getName());
+	}
+}

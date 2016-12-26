@@ -1,0 +1,14 @@
+package cn.ucai.day29.datastructure;
+
+/**
+ * 栈
+ * 队列
+ * 链表
+ * 树
+ * 
+ * JAVA里面：
+ * 1、堆 2、栈
+ */
+public class TestStack {
+
+}

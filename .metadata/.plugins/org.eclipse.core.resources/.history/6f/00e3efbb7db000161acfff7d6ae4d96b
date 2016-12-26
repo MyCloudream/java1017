@@ -1,0 +1,33 @@
+package cn.ucai.day27.thread;
+
+public class TestThread6 {
+	static Integer money = 1000;
+	public static void main(String[] args) {
+		MyThread mt = new MyThread();
+		Thread th1 = new Thread(mt);
+		Thread th2 = new Thread(mt);
+		Thread th3 = new Thread(mt);
+	}
+	
+	private static class MyThread implements Runnable{
+		@Override
+		public void run() {
+			m();
+		}
+		
+		public synchronized void m(){
+			if(money>=400){
+				System.out.println(Thread.currentThread().getName()+"取了400");//取钱的过程
+				money -= 400;// 取钱之后银行卡在处理额度的变化
+				System.out.println(Thread.currentThread().getName()+"看到的余额为："+money);
+				try {
+					Thread.sleep(5000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			}else{
+				System.out.println(Thread.currentThread().getName()+"看到的余额为：余额不足");
+			}
+		}
+	}
+}

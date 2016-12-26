@@ -1,0 +1,7 @@
+package cn.ucai.day16.io;
+
+public class TestFile3 {
+	public static void main(String[] args) {
+		File file = new File("E:/abc/a.txt");
+	}
+}

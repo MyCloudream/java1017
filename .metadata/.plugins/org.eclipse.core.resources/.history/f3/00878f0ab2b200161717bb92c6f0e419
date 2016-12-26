@@ -1,0 +1,6 @@
+package cn.ucai.day30.linkedlist;
+
+public class Node<E> {
+	E e;// ֵ
+	
+}

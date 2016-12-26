@@ -1,0 +1,10 @@
+package cn.ucai.test;
+
+import cn.ucai.util.IOUtil;
+
+public class TestIOUtil {
+	public static void main(String[] args) {
+		String jsonStr = IOUtil.getText("E:/abc/person.json");
+		System.out.println(jsonStr);
+	}
+}

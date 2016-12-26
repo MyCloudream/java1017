@@ -1,0 +1,8 @@
+package cn.ucai.day29;
+
+public class TestString {
+	public static void main(String[] args) {
+		String s = "abcabcabcdabc";
+		System.out.println(s.indexOf("b"));
+	}
+}

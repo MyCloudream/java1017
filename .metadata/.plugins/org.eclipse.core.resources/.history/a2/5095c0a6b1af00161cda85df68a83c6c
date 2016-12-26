@@ -1,0 +1,19 @@
+package cn.ucai.day26.gene;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class GenericMethod {
+	/**
+	 * ·ºÐÍ·½·¨£º
+	 * @param eArr
+	 * @return
+	 */
+	public List<E> array2List(E[] eArr){
+		return Arrays.asList(eArr);
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

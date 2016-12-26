@@ -1,0 +1,5 @@
+package cn.ucai.day29.datastructure;
+
+public class MyStack<E> {
+	private ArrayList<E> list ;
+}

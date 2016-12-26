@@ -1,0 +1,18 @@
+package cn.ucai.day27.thread;
+
+public class TestWait {
+	public synchronized void m1(){
+		
+	}
+	
+	public synchronized void m2(){
+		
+	}
+}
+
+class MyThread1 implements Runnable{
+	@Override
+	public void run() {
+		
+	}
+}

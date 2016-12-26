@@ -1,0 +1,20 @@
+package cn.ucai.day28.sort;
+
+import java.util.Arrays;
+
+public class TestInsert {
+	public static void main(String[] args) {
+		int[] niArr = {3, 44, 38, 5, 47, 15, 36, 26, 27, 2, 46, 4, 19, 50, 48};
+		// 第一次
+		int temp = niArr[1];
+		int index = 1;
+		if(niArr[1]<niArr[0]){
+			// 3向后移位
+			niArr[1] = niArr[0];
+			index --;
+		}
+		// 2的插入
+		niArr[index] = temp;
+		System.out.println(Arrays.toString(niArr));
+	}
+}

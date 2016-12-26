@@ -1,0 +1,32 @@
+package cn.ucai.day27.thread;
+
+import java.util.Scanner;
+
+/**
+ * 1、线程的其他基本概念
+ * 2、线程的生命周期
+ * 3、线程的同步
+ * 
+ * 守护线程 Deamon Thread 
+ */
+public class TestDeamonThread {
+	public static void main(String[] args) {
+		MyThread mt = new MyThread();
+		mt.start();
+		
+		Scanner scan = new Scanner(System.in);
+		// 阻塞操作
+		String str = scan.next();
+		System.out.println("str:"+str);
+		scan.close();
+	}
+	
+	private static class MyThread extends Thread{
+		@Override
+		public void run() {
+			while(true){
+				System.out.println(Thread.currentThread().getName());
+			}
+		}
+	}
+}

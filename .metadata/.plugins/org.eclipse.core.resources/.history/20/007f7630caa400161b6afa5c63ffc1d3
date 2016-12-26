@@ -1,0 +1,22 @@
+package cn.ucai.day16.io;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+
+/**
+ * FileOutputStream:将程序中的数据写入到文件中
+ */
+public class TestFOS {
+	public static void main(String[] args) {
+		File file = new File("E:/abc/a.txt");
+		FileOutputStream fos = null;
+		try {
+			FileOutputStream fos = new FileOutputStream(file);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} finally{
+			
+		}
+	}
+}

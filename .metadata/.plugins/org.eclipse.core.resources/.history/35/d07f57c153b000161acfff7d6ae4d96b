@@ -1,0 +1,9 @@
+package cn.ucai.day27.thread;
+
+/**
+ * 1、线程的其他基本概念
+ * 2、线程的声明周期
+ */
+public class TestDeamonThread {
+
+}

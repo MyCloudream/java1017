@@ -1,0 +1,14 @@
+package cn.ucai.day26.reflex;
+
+import java.sql.DriverManager;
+
+public class TestPerson {
+	public static void main(String[] args) throws ClassNotFoundException {
+		Class c1 = Person.class;// 一般用于传参
+		
+		Person p = new Person();
+		Class c2 = p.getClass();
+		
+		Class c = Class.forName("cn.ucai.day26.reflex.Person");
+	}
+}

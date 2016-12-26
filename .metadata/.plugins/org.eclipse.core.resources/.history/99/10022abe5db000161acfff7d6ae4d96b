@@ -1,0 +1,35 @@
+package cn.ucai.day27.thread;
+
+/**
+ * 经典案例：
+ * 张三一家：一个主卡，两张副卡　　１０００
+ * 400 
+ */
+public class TestThread3 {
+	static int money = 1000;
+	public static void main(String[] args) {
+		MyThread mt = new MyThread();
+		mt.start();
+		
+		for(int i=0;i<30;i++){
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			System.out.println(Thread.currentThread().getName()+"--"+i);
+		}
+	}
+	
+	private static class MyThread extends Thread{
+		public MyThread(String name){
+			super(name);
+		}
+		@Override
+		public void run() {
+			if(money>=400){
+				
+			}
+		}
+	}
+}

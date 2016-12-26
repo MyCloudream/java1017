@@ -1,0 +1,9 @@
+package cn.ucai.day30.linkedlist;
+
+public class TestPerson {
+	public static void main(String[] args) {
+		Person p = new Person("ÕÅÈı",30);
+		
+		
+	}
+}

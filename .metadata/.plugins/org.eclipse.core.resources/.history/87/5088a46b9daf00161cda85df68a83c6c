@@ -1,0 +1,22 @@
+package cn.ucai.day26.gene;
+
+public class GenericClass<E> {
+	private E e;
+
+	public E getE() {
+		return e;
+	}
+
+	public void setE(E e) {
+		this.e = e;
+	}
+	
+	public static void main(String[] args) {
+		GenericClass<String> gc = new GenericClass<String>();
+		gc.setE("abc");
+		
+		String s = gc.getE();
+		System.out.println(s.charAt(0));
+	}
+	
+}

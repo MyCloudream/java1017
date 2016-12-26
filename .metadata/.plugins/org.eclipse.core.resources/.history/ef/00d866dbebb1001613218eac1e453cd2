@@ -1,0 +1,12 @@
+package cn.ucai.day29;
+
+public class TestThread {
+	
+	private class MyThread implements Runnable(){
+		@Override
+		public void run() {
+			
+		}
+	}
+
+}

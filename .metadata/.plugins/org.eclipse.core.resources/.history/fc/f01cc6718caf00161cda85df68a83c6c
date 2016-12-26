@@ -1,0 +1,8 @@
+package cn.ucai.day26;
+
+public class MyStringBuilder {
+	private String result = "";
+	public void append(String msg){
+		result += msg;
+	}
+}

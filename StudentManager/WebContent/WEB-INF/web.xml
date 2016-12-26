@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>StudentManager</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+        <servlet-name>AddStudentServlet</servlet-name>
+        <servlet-class>cn.ucai.servlet.AddStudentServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AddStudentServlet</servlet-name>
+        <url-pattern>/add</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>GetStudentById</servlet-name>
+        <servlet-class>cn.ucai.servlet.GetStudentById</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>GetStudentById</servlet-name>
+        <url-pattern>/getStudentById</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>GetAllStudent</servlet-name>
+        <servlet-class>cn.ucai.servlet.GetAllStudent</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>GetAllStudent</servlet-name>
+        <url-pattern>/getAll</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DeleteStudentById</servlet-name>
+        <servlet-class>cn.ucai.servlet.DeleteStudentById</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteStudentById</servlet-name>
+        <url-pattern>/deleteStudentById</url-pattern>
+    </servlet-mapping>
+    
+</web-app>

@@ -1,0 +1,11 @@
+package cn.ucai.day26;
+
+import java.util.Arrays;
+
+public class TestArray {
+	public static void main(String[] args) {
+		String[] strArr = {"one","two","three","four","five"};
+		// 把strArr转为List集合
+		List<String> list = Arrays.asList(strArr);
+	}
+}

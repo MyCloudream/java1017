@@ -1,0 +1,18 @@
+package cn.ucai.day26;
+
+import java.util.List;
+
+/**
+ * 	private String ip;
+	private String port;
+	private String projectName;
+	private String action;
+	private List<String> paramKey;
+	private List<String> paramValue;
+ */
+public class UrlUtil {
+	private String result = "http://";
+	public String append(String str){
+		result += str;
+	}
+}

@@ -1,0 +1,15 @@
+package cn.ucai.day28.sort;
+
+/**
+ * ÉıĞò
+ * Ã°ÅİÅÅĞò
+ */
+public class TestBubble {
+	public static void main(String[] args) {
+		int[] niArr = {3, 44, 38, 5, 47, 15, 36, 26, 27, 2, 46, 4, 19, 50, 48};
+		// µÚÒ»ÂÖ
+		for(int i=0;i<niArr.length;i++){
+			if(niArr[i] niArr[i+1])
+		}
+	}
+}

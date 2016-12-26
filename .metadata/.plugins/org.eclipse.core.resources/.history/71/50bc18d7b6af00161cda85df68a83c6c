@@ -1,0 +1,7 @@
+package cn.ucai.day26.gene;
+
+interface Inter<E>
+
+public class Generic {
+
+}

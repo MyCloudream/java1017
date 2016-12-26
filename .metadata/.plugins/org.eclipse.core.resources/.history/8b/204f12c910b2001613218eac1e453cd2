@@ -1,0 +1,16 @@
+package cn.ucai.day29.datastructure;
+
+/**
+ * 栈
+ * 队列
+ * 链表
+ * 树
+ * 
+ * JAVA里面：
+ * 1、堆 2、栈   内存区域
+ * 
+ * 栈（Stack）（丝带可）  堆栈
+ */
+public class TestStack {
+
+}

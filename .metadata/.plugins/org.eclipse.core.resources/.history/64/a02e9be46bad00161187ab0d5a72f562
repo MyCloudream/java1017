@@ -1,0 +1,48 @@
+package cn.ucai.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/hello")
+public class HelloWorldServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    public HelloWorldServlet() {
+        super();
+    }
+
+    // 处理get请求
+    // 通过request对象，我们可以取得请求来的全部内容
+    // 通过response对象，我们可以把数据、图片等响应给客户端。
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// PrintWriter：字符输出流：一端连着程序，一端连着本地文件
+		// PrintWriter pw0 = new PrintWriter(new OutputStreamWriter(new FileOutputStream(new File("E:/abc/a.txt"))));
+		// 字符输出流：一端连着程序，一端连着响应的body
+		PrintWriter pw = response.getWriter();
+		pw.println("<html>")
+		pw.println("Hello Servlet !<br/>");
+		pw.println("Hello Servlet !");
+		pw.println("Hello Servlet !");
+		pw.println("Hello Servlet !");
+		pw.println("Hello Servlet !");
+		pw.println("Hello Servlet !");
+		pw.println("Hello Servlet !");
+		pw.println("Hello Servlet !");
+		pw.println("Hello Servlet !");
+		pw.println("Hello Servlet !");
+		pw.println("</html>");
+		pw.close();
+	}
+
+	// 处理post请求
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doGet(request, response);
+	}
+
+}

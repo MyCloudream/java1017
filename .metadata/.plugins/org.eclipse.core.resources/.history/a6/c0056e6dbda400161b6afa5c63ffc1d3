@@ -1,0 +1,28 @@
+package cn.ucai.day16.io;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+
+public class TestFile8 {
+	public static void main(String[] args) {
+		File[] fileArr = getFiles(".java");
+	}
+	
+	public static File[] getFiles(MyFileFilter mff){
+		File fileDir = new File("E:/abc/");
+		File[] fileArr = fileDir.listFiles();
+		List<File> list = new ArrayList<File>();
+		for (int i = 0; i < fileArr.length; i++) {
+			if(mff.accept(fileArr[i])){
+				list.add(fileArr[i]);
+			}
+		}
+		File[] fileArrResult = list.toArray(new File[list.size()]);
+		return fileArrResult;
+	}
+}
+
+interface MyFileFilter{
+	public abstract boolean accept(File file);
+}

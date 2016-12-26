@@ -1,0 +1,17 @@
+package cn.ucai.day26.reflex;
+
+/**
+ * 反射：通过Class，我们可以获取指定对象的指定类的所有内容（属性、方法、构造方法等）并能执行其构造方法和方法等。
+ */
+public class TestPerson {
+	public static void main(String[] args) throws Exception {
+		Class c1 = Person.class;// 一般用于传参
+		
+		Person p = new Person();
+		Class c2 = p.getClass();
+		
+		Class c = Class.forName("cn.ucai.day26.reflex.Person");
+		Person person = (Person) c.newInstance();// Person person = new Person();
+		System.out.println(person);
+	}
+}

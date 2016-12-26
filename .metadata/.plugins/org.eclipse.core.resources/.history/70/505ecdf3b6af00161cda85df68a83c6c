@@ -1,0 +1,9 @@
+package cn.ucai.day26.gene;
+
+interface Inter<E,K>{
+	public void m(E e1,K k1);
+}
+
+public class Generic {
+
+}

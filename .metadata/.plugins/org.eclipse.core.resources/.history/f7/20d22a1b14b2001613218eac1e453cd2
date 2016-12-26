@@ -1,0 +1,11 @@
+package cn.ucai.day29.datastructure;
+
+import java.util.Deque;
+import java.util.LinkedList;
+
+public class TestDeque {
+	public static void main(String[] args) {
+		Deque<String> stack = new LinkedList<>();
+		
+	}
+}
